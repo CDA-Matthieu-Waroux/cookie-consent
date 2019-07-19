@@ -1,0 +1,108 @@
+@import "https://fonts.googleapis.com/css?family=Cairo";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+
+.cookie {
+  background: #2c3e50;
+  color: #ecf0f1;
+  padding: 1rem 10%;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  width: 100%;
+  z-index:9999;
+  margin-top: -20px;
+}
+@media (max-width: 32rem) {
+  .cookie {
+    text-align: center;
+  }
+}
+.cookie .cookie__message {
+  padding: 0.2rem 0;
+  margin: 0;
+  display: inline-block;
+}
+@media (max-width: 64rem) {
+  .cookie .cookie__message {
+    width: 100%;
+  }
+}
+.cookie .cookie__accept,
+.cookie .cookie__decline,
+.cookie .cookie__link {
+  padding: 0.2rem 0.8rem;
+  border: 0;
+  background: white;
+  margin: 0 0.5rem;
+  -webkit-transition: background 150ms ease;
+  transition: background 150ms ease;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+}
+.cookie .cookie__accept:focus,
+.cookie .cookie__decline:focus,
+.cookie .cookie__link:focus {
+  outline: none;
+}
+@media (max-width: 64rem) {
+  .cookie .cookie__accept,
+  .cookie .cookie__decline,
+  .cookie .cookie__link {
+    margin: 0.5rem 1rem 0.5rem 0;
+  }
+}
+@media (max-width: 32rem) {
+  .cookie .cookie__accept,
+  .cookie .cookie__decline,
+  .cookie .cookie__link {
+    width: 100%;
+  }
+}
+.cookie .cookie__accept {
+  background: #3498db;
+  color: #ecf0f1;
+}
+.cookie .cookie__accept:hover, .cookie .cookie__accept:focus {
+  background: #57aae1;
+}
+.cookie .cookie__accept:active {
+  background: #68b2e4;
+}
+.cookie .cookie__decline {
+  background: #1e2a36;
+  color: #ecf0f1;
+}
+.cookie .cookie__decline:hover, .cookie .cookie__decline:focus {
+  background: #233140;
+}
+.cookie .cookie__decline:active {
+  background: #1e2a36;
+}
+.cookie .cookie__link {
+  color: #3498db;
+  background: none;
+  padding: 0.2rem 0;
+  margin: 0;
+}
+@media (max-width: 64rem) {
+  .cookie .cookie__link {
+    margin: 0.5rem 0;
+  }
+}
+.cookie .cookie__link:hover, .cookie .cookie__link:focus {
+  text-decoration: underline;
+}
+@media (max-width: 32rem) {
+  .cookie .cookie__link {
+    width: 100%;
+    text-align: center;
+  }
+}
